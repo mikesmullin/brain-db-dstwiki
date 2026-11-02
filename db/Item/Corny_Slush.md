@@ -1,0 +1,16 @@
+---
+identity:
+  title: Corny Slush
+  wikiPage: Midsummer Cawnival/Prize Booth
+item:
+  description: A Midsummer Cawnival reward available from the Prize Booth; can be given to a Crow Kid for a token and ticket.
+roles:
+  roles:
+  - Cawnival
+  - Event Food
+  - Prize Booth Rewards
+ITEM_CRAFTED_AT_STRUCTURE:
+- Structure/Prize_Booth
+---
+
+# Item/Corny_Slush

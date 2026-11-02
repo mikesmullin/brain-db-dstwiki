@@ -1,0 +1,13 @@
+# dstwiki — converted from the es6 schema.mjs + data.mjs pair.
+embed:
+  model: none          # keyword + graph only; no provider is contacted
+llm:
+  chat_url: http://127.0.0.1:1234
+  chat_model: default
+  slot_url: http://127.0.0.1:1237
+pg:
+  host: 127.0.0.1
+  port: 5433
+  dbname: brain
+  user: brain
+storage: []

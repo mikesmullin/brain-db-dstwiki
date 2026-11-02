@@ -1,0 +1,4 @@
+# Nothing rebuildable lives in db/ — the index is a schema in the shared
+# PostgreSQL instance (`brain pg`), rebuilt with `brain reindex`.
+/target/
+*.trace.jsonl

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "beefalo-eats",
+    "question": "what do beefalo eat?",
+    "expectedAnswer": ["Item/Cut_Grass", "Item/Twigs", "Item/Beefalo_Treats"],
+    "note": "A question that does not NAME its kind, on a schema where the class Choice cannot guess it: the Choice abstains, and the kind comes off the T-box instead (EATS is declared Animal -> Item). The menu then narrows to the relation the question names, because Beefalo has four Item out-edges and only two relations — EATS and ANIMAL_DROPS — and the kind filter cannot separate them. Three targets, not the two the es6 fixture expects: the live data.mjs grew a third."
+  },
+  { "id": "moon-cake-crafted", "question": "where is Moon Cake crafted?",
+    "expectedAnswer": ["Structure/Bunnyman_Shrine"] },
+  { "id": "alchemy-engine-crafting", "question": "how to craft an Alchemy Machine?",
+    "expectedAnswer": ["Structure/Alchemy_Engine"],
+    "note": "Fact mode: the answer is a property of one node (info.crafting), not a set of nodes." },
+  { "id": "wurt-eat-meat", "question": "can wurt eat meat?",
+    "expectedAnswer": ["Character/Wurt"],
+    "note": "A yes/no read off the named node's own record. The kind is unresolvable and the T-box declines (no Character-eats relation is declared), which is the honest outcome: fact mode lands on Wurt and the finalizer reads the answer off her." },
+  { "id": "merm-king-crafting", "question": "how do you craft a merm king?",
+    "expectedAnswer": ["Structure/Royal_Tapestry"],
+    "note": "A multi-hop fact: the named node does not hold the recipe, so SEEK walks past it." },
+  { "id": "mandrake-soup", "question": "whats mandrake soup",
+    "expectedAnswer": ["Item/Mandrake_Soup"],
+    "note": "Standing on the thing the question names, in fact mode: its own record IS the answer, so nothing is judged." },
+  { "id": "mandrake-best-for-health", "question": "best use of mandrake for health",
+    "expectedAnswer": ["Item/Mandrake_Soup"],
+    "note": "A superlative over a derived set. *none* + a superlative is a contradiction, so there IS a set: gather it around where the crawl settles, then decide once, relatively. Soup and Cooked Mandrake both heal 100, so the discriminator is the soup's 'Sleep-Free Healing' role." }
+]

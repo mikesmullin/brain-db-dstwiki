@@ -1,0 +1,1399 @@
+ontology: dstwiki
+components:
+  BiomeInfo:
+    fields:
+      description:
+        type: string
+      features:
+        type: string
+        list: true
+      gameArea:
+        type: string
+      introduced:
+        type: string
+      terrain:
+        type: string
+  CharacterStats:
+    fields:
+      ability:
+        type: string
+      bio:
+        type: string
+      birthday:
+        type: string
+      damage:
+        type: string
+      favoriteFood:
+        type: string
+      health:
+        type: string
+      hunger:
+        type: string
+      hungerModifier:
+        type: string
+      image:
+        type: string
+        list: true
+      mightiness:
+        type: string
+      motto:
+        type: string
+      pronouns:
+        type: string
+      sanity:
+        type: string
+      sanityMult:
+        type: string
+      spawnCode:
+        type: string
+      specialItem:
+        type: string
+      speedModifier:
+        type: string
+      startItem:
+        type: string
+      survivability:
+        type: string
+      title:
+        type: string
+  Description:
+    fields:
+      behavior:
+        type: string
+      tips:
+        type: string
+  EventInfo:
+    fields:
+      availability:
+        type: string
+      dates:
+        type: string
+        list: true
+      features:
+        type: string
+        list: true
+      recurrence:
+        type: string
+      season:
+        type: string
+  Identity:
+    fields:
+      title:
+        type: string
+        required: true
+      wikiPage:
+        type: string
+        required: true
+  ItemStats:
+    fields:
+      accuracy:
+        type: string
+      attackRange:
+        type: string
+      beaverness:
+        type: string
+      bonusRange:
+        type: string
+      burnTime:
+        type: string
+      canBeBurned:
+        type: string
+      capacity:
+        type: string
+      castRange:
+        type: string
+      choppingEfficiency:
+        type: string
+      cookTime:
+        type: string
+      cooldown:
+        type: string
+      crafting:
+        type: string
+      crop:
+        type: string
+      damage:
+        type: string
+      deconstruct:
+        type: string
+      description:
+        type: string
+      droppedBy:
+        type: string
+      equipSlot:
+        type: string
+      fertilize:
+        type: string
+      foodType:
+        type: string
+      foodValue:
+        type: string
+      freezingResistance:
+        type: string
+      fuelValue:
+        type: string
+      haunt:
+        type: string
+      heal:
+        type: string
+      hunger:
+        type: string
+      image:
+        type: string
+        list: true
+      introduced:
+        type: string
+      lifeSteal:
+        type: string
+      lureCharm:
+        type: string
+      lureRadius:
+        type: string
+      maxSpeed:
+        type: string
+      nameExamples:
+        type: string
+        list: true
+      oarForce:
+        type: string
+      objectSanity:
+        type: string
+      overheatingResistance:
+        type: string
+      perk:
+        type: string
+      planarDamage:
+        type: string
+      planarDefense:
+        type: string
+      protection:
+        type: string
+      repair:
+        type: string
+      sanity:
+        type: string
+      spawnCode:
+        type: string
+      spoil:
+        type: string
+      stack:
+        type: string
+      tab:
+        type: string
+      tier:
+        type: string
+      uses:
+        type: string
+      waterResistance:
+        type: string
+      wearsOut:
+        type: string
+      wetnessResistance:
+        type: string
+  MechanicInfo:
+    fields:
+      accessedFrom:
+        type: string
+      availability:
+        type: string
+      behavior:
+        type: string
+      description:
+        type: string
+      fields:
+        type: string
+        list: true
+  MobStats:
+    fields:
+      attackPeriod:
+        type: string
+      attackRange:
+        type: string
+      damage:
+        type: string
+      diet:
+        type: string
+      drops:
+        type: string
+      heal:
+        type: string
+      health:
+        type: string
+      hunger:
+        type: string
+      iceStaff:
+        type: string
+      image:
+        type: string
+        list: true
+      introduced:
+        type: string
+      mobSanity:
+        type: string
+      naughtiness:
+        type: string
+      planarDamage:
+        type: string
+      planarEntityProtection:
+        type: string
+      protection:
+        type: string
+      runSpeed:
+        type: string
+      sleepDart:
+        type: string
+      spawnCode:
+        type: string
+      spawnFrom:
+        type: string
+      specialAbility:
+        type: string
+      spoil:
+        type: string
+      tool:
+        type: string
+      tributeItems:
+        type: string
+        list: true
+      walkSpeed:
+        type: string
+  PlantInfo:
+    fields:
+      attackPeriod:
+        type: string
+      attackRange:
+        type: string
+      biome:
+        type: string
+      blooming:
+        type: string
+      canBeBurned:
+        type: string
+      capacity:
+        type: string
+      damage:
+        type: string
+      growthFormula:
+        type: string
+      haunt:
+        type: string
+      health:
+        type: string
+      image:
+        type: string
+        list: true
+      introduced:
+        type: string
+      objectSanity:
+        type: string
+      perk:
+        type: string
+      picked:
+        type: string
+      renew:
+        type: string
+      resources:
+        type: string
+      spawnCode:
+        type: string
+      spawnFrom:
+        type: string
+      tool:
+        type: string
+      walkSpeed:
+        type: string
+      waterConsumption:
+        type: string
+  Roles:
+    fields:
+      roles:
+        type: string
+        list: true
+  SeasonInfo:
+    fields:
+      duration:
+        type: string
+      features:
+        type: string
+        list: true
+      predecessor:
+        type: string
+      successor:
+        type: string
+      world:
+        type: string
+  SkillInfo:
+    fields:
+      crafting:
+        type: string
+      description:
+        type: string
+      effect:
+        type: string
+      prerequisite:
+        type: string
+      tree:
+        type: string
+  SkinInfo:
+    fields:
+      description:
+        type: string
+      rarity:
+        type: string
+      slot:
+        type: string
+  StructInfo:
+    fields:
+      amountProduced:
+        type: string
+      attackPeriod:
+        type: string
+      attackRange:
+        type: string
+      biome:
+        type: string
+      burnTime:
+        type: string
+      canBeBurned:
+        type: string
+      capacity:
+        type: string
+      cooldown:
+        type: string
+      crafting:
+        type: string
+      damage:
+        type: string
+      decorationScore:
+        type: string
+      description:
+        type: string
+      equipSlot:
+        type: string
+      haunt:
+        type: string
+      heal:
+        type: string
+      health:
+        type: string
+      image:
+        type: string
+        list: true
+      introduced:
+        type: string
+      inventory:
+        type: string
+      objectSanity:
+        type: string
+      perk:
+        type: string
+      picked:
+        type: string
+      renew:
+        type: string
+      resource:
+        type: string
+      resources:
+        type: string
+      source:
+        type: string
+      spawn:
+        type: string
+      spawnCode:
+        type: string
+      stack:
+        type: string
+      tier:
+        type: string
+      tool:
+        type: string
+  TerrainInfo:
+    fields:
+      biome:
+        type: string
+      description:
+        type: string
+      enlightenmentEffect:
+        type: string
+      movementModifier:
+        type: string
+      spawn:
+        type: string
+      terrainType:
+        type: string
+  WeatherInfo:
+    fields:
+      animalEffects:
+        type: string
+        list: true
+      biome:
+        type: string
+      characterEffects:
+        type: string
+        list: true
+      damage:
+        type: string
+      damagePeriod:
+        type: string
+      introduced:
+        type: string
+      plantEffects:
+        type: string
+        list: true
+      protection:
+        type: string
+      trigger:
+        type: string
+      worldEffects:
+        type: string
+        list: true
+classes:
+  Animal:
+    components:
+      desc: Description
+      identity: Identity
+      mob: MobStats
+      roles: Roles
+    top: true
+  Biome:
+    components:
+      desc: Description
+      identity: Identity
+      info: BiomeInfo
+      roles: Roles
+    top: true
+  Character:
+    components:
+      char: CharacterStats
+      desc: Description
+      identity: Identity
+      roles: Roles
+    top: true
+  Event:
+    components:
+      desc: Description
+      event: EventInfo
+      identity: Identity
+      roles: Roles
+    top: true
+  Follower:
+    components:
+      desc: Description
+      identity: Identity
+      mob: MobStats
+      roles: Roles
+    top: true
+  Item:
+    components:
+      desc: Description
+      identity: Identity
+      item: ItemStats
+      roles: Roles
+    top: true
+  Mechanic:
+    components:
+      desc: Description
+      identity: Identity
+      info: MechanicInfo
+      roles: Roles
+    top: true
+  NPC:
+    components:
+      desc: Description
+      identity: Identity
+      mob: MobStats
+      roles: Roles
+    top: true
+  Plant:
+    components:
+      desc: Description
+      identity: Identity
+      info: PlantInfo
+      roles: Roles
+    top: true
+  Season:
+    components:
+      desc: Description
+      identity: Identity
+      roles: Roles
+      season: SeasonInfo
+    top: true
+  Skill:
+    components:
+      desc: Description
+      identity: Identity
+      roles: Roles
+      skill: SkillInfo
+    top: true
+  Skin:
+    components:
+      desc: Description
+      identity: Identity
+      roles: Roles
+      skin: SkinInfo
+    top: true
+  SkinSet:
+    components:
+      desc: Description
+      identity: Identity
+      roles: Roles
+    top: true
+  Structure:
+    components:
+      desc: Description
+      identity: Identity
+      info: StructInfo
+      roles: Roles
+    top: true
+  Terrain:
+    components:
+      desc: Description
+      identity: Identity
+      info: TerrainInfo
+      roles: Roles
+    top: true
+  Weather:
+    components:
+      desc: Description
+      identity: Identity
+      info: WeatherInfo
+      roles: Roles
+    top: true
+relations:
+  ACCEPTS:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  ANIMAL_AFFECTED_BY_ITEM:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  ANIMAL_BUFFS_ANIMAL:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ANIMAL_DROPPED_BY:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+    inverseOf: ANIMAL_DROPS
+  ANIMAL_DROPS:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  ANIMAL_DROPS_PLANT:
+    domain: Animal
+    range: Plant
+    cardinality: mtm
+  ANIMAL_DROPS_STRUCTURE:
+    domain: Animal
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_DROPPED_BY_ANIMAL
+  ANIMAL_ENHANCED_BY_SKILL:
+    domain: Animal
+    range: Skill
+    cardinality: mtm
+  ANIMAL_GIVES_ITEM:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_GIVEN_BY_ANIMAL
+  ANIMAL_GROUP_INCLUDES_ANIMAL:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ANIMAL_HAS_VARIANT:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+    inverseOf: ANIMAL_VARIANT_OF
+  ANIMAL_HEALS:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ANIMAL_LAYS:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  ANIMAL_MATURES_INTO:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ANIMAL_SPAWNS:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ANIMAL_SPAWNS_ANIMAL:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ANIMAL_SPAWNS_ITEM:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  ANIMAL_SPAWNS_STRUCTURE:
+    domain: Animal
+    range: Structure
+    cardinality: mtm
+  ANIMAL_TRANSFORMS_INTO_ANIMAL:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ANIMAL_TRANSFORMS_INTO_ITEM:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  ANIMAL_USES_ITEM:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_USED_BY_ANIMAL
+  ANIMAL_VARIANT_OF:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  ATTACKS:
+    domain: Follower
+    range: Animal
+    cardinality: mtm
+  ATTRACTS:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  BAITS:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  BIOME_CONTAINS_BIOME:
+    domain: Biome
+    range: Biome
+    cardinality: mtm
+  CAN_DAMAGE:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+  CAPTURES:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  CHARACTER_CRAFTS_ITEM:
+    domain: Character
+    range: Item
+    cardinality: mtm
+  CHARACTER_CRAFTS_STRUCTURE:
+    domain: Character
+    range: Structure
+    cardinality: mtm
+  CHARACTER_CRAFTS_TERRAIN:
+    domain: Character
+    range: Terrain
+    cardinality: mtm
+  CHARACTER_HAS_SKILL:
+    domain: Character
+    range: Skill
+    cardinality: mtm
+  CHARACTER_PRODUCES:
+    domain: Character
+    range: Item
+    cardinality: mtm
+  CHARACTER_RECRUITS_ANIMAL:
+    domain: Character
+    range: Animal
+    cardinality: mtm
+  CHARACTER_SUMMONS_ANIMAL:
+    domain: Character
+    range: Animal
+    cardinality: mtm
+  CHARACTER_TRANSMUTES:
+    domain: Character
+    range: Item
+    cardinality: mtm
+  CONTROLS:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  CRAFTED_FROM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  CRAFTED_USING_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  CRAFTED_USING_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+  DECONSTRUCTS_TO:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  DROPPED_BY:
+    domain: Item
+    range: Follower
+    cardinality: mtm
+    inverseOf: DROPS
+  DROPS:
+    domain: Follower
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_DROPPED_BY_FOLLOWER
+  EATS:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  ENRICHES:
+    domain: Item
+    range: Plant
+    cardinality: mtm
+  EVENT_OBSERVED_BY_STRUCTURE:
+    domain: Event
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_OBSERVES_EVENT
+  EXCLUSIVE_TO:
+    domain: Item
+    range: Character
+    cardinality: mtm
+  FOLLOWER_BUFFED_BY_ITEM:
+    domain: Follower
+    range: Item
+    cardinality: mtm
+  FOLLOWER_SUMMONED_BY_ITEM:
+    domain: Follower
+    range: Item
+    cardinality: mtm
+  FOLLOWS:
+    domain: Follower
+    range: Character
+    cardinality: mtm
+  GROWS_INTO:
+    domain: Item
+    range: Plant
+    cardinality: mtm
+  HAS_ITEM:
+    domain: Character
+    range: Item
+    cardinality: mtm
+  HAS_VARIANT:
+    domain: Follower
+    range: Follower
+    cardinality: mtm
+    inverseOf: VARIANT_OF
+  HATCHES_INTO:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  HAUNTED_INTO:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  HEALS:
+    domain: Item
+    range: Character
+    cardinality: mtm
+  ITEM_ACCEPTS_SOCKETED_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_AFFECTS_CHARACTER:
+    domain: Item
+    range: Character
+    cardinality: mtm
+  ITEM_ALLOWS_RIDING_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_AWARDED_BY_NPC:
+    domain: Item
+    range: NPC
+    cardinality: mtm
+  ITEM_BONDS_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_BUFFS_FOLLOWER:
+    domain: Item
+    range: Follower
+    cardinality: mtm
+    inverseOf: FOLLOWER_BUFFED_BY_ITEM
+  ITEM_CAPTURED_FROM_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_CONTAINED_IN_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_CONTAINS_ITEM
+  ITEM_CONTAINS_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_COOKED_IN_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+  ITEM_CRAFTED_AT_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+  ITEM_DISSIPATES_WEATHER:
+    domain: Item
+    range: Weather
+    cardinality: mtm
+  ITEM_DROPPED_BY_FOLLOWER:
+    domain: Item
+    range: Follower
+    cardinality: mtm
+  ITEM_ENHANCED_BY_SKILL:
+    domain: Item
+    range: Skill
+    cardinality: mtm
+  ITEM_GIVEN_BY_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_GIVEN_TO_NPC:
+    domain: Item
+    range: NPC
+    cardinality: mtm
+  ITEM_GIVEN_TO_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_RECEIVES_ITEM
+  ITEM_HAS_VARIANT:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_VARIANT_OF
+  ITEM_PLACES_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_PLACED_BY_ITEM
+  ITEM_PLACES_TERRAIN:
+    domain: Item
+    range: Terrain
+    cardinality: mtm
+  ITEM_PREVENTS_ABILITY:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_PRODUCED_BY_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_PRODUCES_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_PRODUCED_BY_ITEM
+  ITEM_PURCHASES_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_REMOVES_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_REPAIRED_BY:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_REPAIRS:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_REPAIRED_BY
+  ITEM_REPELS_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_REPLACED_BY_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_REPLACES_ITEM
+  ITEM_REPLACES_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_REQUIRES_MATCHING_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_REVEALS_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_SKINNED_AS:
+    domain: Item
+    range: Skin
+    cardinality: mtm
+  ITEM_SOCKETED_INTO_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_ACCEPTS_SOCKETED_ITEM
+  ITEM_SOLD_BY_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_SELLS_ITEM
+  ITEM_SPAWNED_BY_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+    inverseOf: ANIMAL_SPAWNS_ITEM
+  ITEM_SPAWNS_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_SUMMONS_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_SUMMONS_FOLLOWER:
+    domain: Item
+    range: Follower
+    cardinality: mtm
+    inverseOf: FOLLOWER_SUMMONED_BY_ITEM
+  ITEM_SUMMONS_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+  ITEM_TAMES_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_TRADED_TO_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_TRANSFORMS_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_TRANSFORMS_INTO_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_UNLOCKED_BY:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_UNLOCKED_BY_SKILL:
+    domain: Item
+    range: Skill
+    cardinality: mtm
+  ITEM_UNLOCKS_ITEM:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_UNLOCKED_BY
+  ITEM_UNLOCKS_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_UNLOCKED_BY_ITEM
+  ITEM_USED_AS_TOY_BY_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_USED_BY_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+  ITEM_USED_IN_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_CRAFTED_FROM
+  ITEM_USED_ON_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+    inverseOf: ANIMAL_AFFECTED_BY_ITEM
+  ITEM_USES_AMMO:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  ITEM_VARIANT_OF:
+    domain: Item
+    range: Item
+    cardinality: mtm
+  LAID_BY_ANIMAL:
+    domain: Item
+    range: Animal
+    cardinality: mtm
+    inverseOf: ANIMAL_LAYS
+  MECHANIC_ACTIVATES_ANIMAL:
+    domain: Mechanic
+    range: Animal
+    cardinality: mtm
+  MECHANIC_TRIGGERS_ANIMAL:
+    domain: Mechanic
+    range: Animal
+    cardinality: mtm
+  NEUTRAL_TO:
+    domain: Animal
+    range: Character
+    cardinality: mtm
+  NPC_AWARDS_ITEM:
+    domain: NPC
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_AWARDED_BY_NPC
+  NPC_RECEIVES_ITEM:
+    domain: NPC
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_GIVEN_TO_NPC
+  PLANTABLE_AS:
+    domain: Animal
+    range: Plant
+    cardinality: oto
+  PLANTED_IN_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+  PLANTS_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+  PLANT_GROWS_INTO:
+    domain: Plant
+    range: Plant
+    cardinality: mtm
+  PLANT_HAS_VARIANT:
+    domain: Plant
+    range: Plant
+    cardinality: mtm
+    inverseOf: PLANT_VARIANT_OF
+  PLANT_MATURES_INTO:
+    domain: Plant
+    range: Structure
+    cardinality: mtm
+  PLANT_PRODUCES:
+    domain: Plant
+    range: Item
+    cardinality: mtm
+  PLANT_SPAWNED_FROM_STRUCTURE:
+    domain: Plant
+    range: Structure
+    cardinality: mtm
+    inverseOf: PLANT_SPAWNS_FROM_STRUCTURE
+  PLANT_SPAWNS:
+    domain: Plant
+    range: Animal
+    cardinality: mtm
+  PLANT_SPAWNS_FROM_STRUCTURE:
+    domain: Structure
+    range: Plant
+    cardinality: mtm
+  PLANT_SPAWNS_STRUCTURE:
+    domain: Plant
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_SPAWNED_BY_PLANT
+  PLANT_VARIANT_OF:
+    domain: Plant
+    range: Plant
+    cardinality: mtm
+  PRODUCED_BY_CHARACTER:
+    domain: Item
+    range: Character
+    cardinality: mtm
+    inverseOf: CHARACTER_PRODUCES
+  PRODUCED_BY_PLANT:
+    domain: Item
+    range: Plant
+    cardinality: mtm
+    inverseOf: PLANT_PRODUCES
+  REMOVES:
+    domain: Animal
+    range: Item
+    cardinality: mtm
+  REVEALS:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+  SKILL_ENHANCES_ANIMAL:
+    domain: Skill
+    range: Animal
+    cardinality: mtm
+    inverseOf: ANIMAL_ENHANCED_BY_SKILL
+  SKILL_ENHANCES_ITEM:
+    domain: Skill
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_ENHANCED_BY_SKILL
+  SKILL_REQUIRES_SKILL:
+    domain: Skill
+    range: Skill
+    cardinality: mtm
+  SKILL_UNLOCKS_ITEM:
+    domain: Skill
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_UNLOCKED_BY_SKILL
+  SKIN_MEMBER_OF_SET:
+    domain: Skin
+    range: SkinSet
+    cardinality: mtm
+    inverseOf: SKIN_SET_HAS_MEMBER
+  SKIN_SET_HAS_MEMBER:
+    domain: SkinSet
+    range: Skin
+    cardinality: mtm
+  SPAWN:
+    domain: Plant
+    range: Animal
+    cardinality: nto
+  SPAWNED_FROM:
+    domain: Animal
+    range: Plant
+    cardinality: nto
+    inverseOf: SPAWN
+  SPAWNED_FROM_ANIMAL:
+    domain: Animal
+    range: Animal
+    cardinality: mtm
+    inverseOf: ANIMAL_SPAWNS
+  SPAWNED_FROM_PLANT:
+    domain: Animal
+    range: Plant
+    cardinality: mtm
+    inverseOf: PLANT_SPAWNS
+  SPAWNED_FROM_STRUCTURE:
+    domain: Animal
+    range: Structure
+    cardinality: mtm
+    inverseOf: SPAWNS
+  SPAWNS:
+    domain: Structure
+    range: Animal
+    cardinality: mtm
+  SPAWNS_FOLLOWER:
+    domain: Structure
+    range: Follower
+    cardinality: nto
+  SPAWNS_OVERLAY:
+    domain: Animal
+    range: Terrain
+    cardinality: mtm
+  SPAWN_FROM:
+    domain: Follower
+    range: Item
+    cardinality: mtm
+  STRUCTURE_ACCEPTS_ANIMAL:
+    domain: Structure
+    range: Animal
+    cardinality: mtm
+  STRUCTURE_ACCEPTS_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_ACTIVATED_BY_STRUCTURE:
+    domain: Structure
+    range: Structure
+    cardinality: mtm
+  STRUCTURE_AWARDS_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_CRAFTED_FROM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_CRAFTS_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_CRAFTED_AT_STRUCTURE
+  STRUCTURE_DRAWN_ON_WITH_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_DROPPED_BY:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_DROPS
+  STRUCTURE_DROPPED_BY_ANIMAL:
+    domain: Structure
+    range: Animal
+    cardinality: mtm
+  STRUCTURE_DROPS:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_EMITS_MECHANIC:
+    domain: Structure
+    range: Mechanic
+    cardinality: mtm
+  STRUCTURE_FUELED_BY:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_HAS_VARIANT:
+    domain: Structure
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_VARIANT_OF
+  STRUCTURE_HOUSES_ANIMAL:
+    domain: Structure
+    range: Animal
+    cardinality: mtm
+  STRUCTURE_OBSERVES_EVENT:
+    domain: Structure
+    range: Event
+    cardinality: mtm
+  STRUCTURE_PAIRED_WITH:
+    domain: Structure
+    range: Structure
+    cardinality: mtm
+  STRUCTURE_PLACED_BY_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_RECEIVES_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_RECEIVES_MECHANIC:
+    domain: Structure
+    range: Mechanic
+    cardinality: mtm
+  STRUCTURE_REPAIRED_BY:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_SELLS_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_SKINNED_AS:
+    domain: Structure
+    range: Skin
+    cardinality: mtm
+  STRUCTURE_SPAWNED_BY_PLANT:
+    domain: Structure
+    range: Plant
+    cardinality: mtm
+  STRUCTURE_SPAWNED_FROM:
+    domain: Structure
+    range: Structure
+    cardinality: mtm
+    inverseOf: STRUCTURE_SPAWNS
+  STRUCTURE_SPAWNS:
+    domain: Structure
+    range: Structure
+    cardinality: mtm
+  STRUCTURE_SPAWNS_ANIMAL:
+    domain: Structure
+    range: Animal
+    cardinality: mtm
+  STRUCTURE_SPAWNS_FOLLOWER:
+    domain: Structure
+    range: Follower
+    cardinality: mtm
+  STRUCTURE_SPAWNS_OVERLAY:
+    domain: Structure
+    range: Terrain
+    cardinality: mtm
+  STRUCTURE_SPAWNS_WEATHER:
+    domain: Structure
+    range: Weather
+    cardinality: mtm
+  STRUCTURE_TRANSFORMS_INTO_ANIMAL:
+    domain: Structure
+    range: Animal
+    cardinality: mtm
+  STRUCTURE_TRANSFORMS_INTO_STRUCTURE:
+    domain: Structure
+    range: Structure
+    cardinality: mtm
+  STRUCTURE_UNLOCKED_BY_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_UPGRADED_BY:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+  STRUCTURE_USED_IN_ITEM:
+    domain: Structure
+    range: Item
+    cardinality: mtm
+    inverseOf: CRAFTED_USING_STRUCTURE
+  STRUCTURE_VARIANT_OF:
+    domain: Structure
+    range: Structure
+    cardinality: mtm
+  SUMMONED_VIA:
+    domain: Follower
+    range: Animal
+    cardinality: oto
+  TERRAIN_CREATED_BY_CHARACTER:
+    domain: Terrain
+    range: Character
+    cardinality: mtm
+  TERRAIN_PLACED_BY_ITEM:
+    domain: Terrain
+    range: Item
+    cardinality: mtm
+    inverseOf: ITEM_PLACES_TERRAIN
+  TRANSFORMS_INTO:
+    domain: Item
+    range: Character
+    cardinality: mtm
+  TRIGGERS_BLOOM:
+    domain: Item
+    range: Character
+    cardinality: mtm
+  USED_IN:
+    domain: Item
+    range: Item
+    cardinality: mtm
+    inverseOf: CRAFTED_FROM
+  VARIANT_OF:
+    domain: Follower
+    range: Follower
+    cardinality: mtm
+  WEATHER_AFFECTS_ANIMAL:
+    domain: Weather
+    range: Animal
+    cardinality: mtm
+  WEATHER_AFFECTS_PLANT:
+    domain: Weather
+    range: Plant
+    cardinality: mtm
+  WEATHER_DEGRADES_ITEM:
+    domain: Weather
+    range: Item
+    cardinality: mtm
+  WEATHER_EMPOWERS_ANIMAL:
+    domain: Weather
+    range: Animal
+    cardinality: mtm
+  WEATHER_FORMS_STRUCTURE:
+    domain: Weather
+    range: Structure
+    cardinality: mtm
+  WEATHER_REPAIRS_ITEM:
+    domain: Weather
+    range: Item
+    cardinality: mtm
+  YIELDED_BY_STRUCTURE:
+    domain: Item
+    range: Structure
+    cardinality: mtm
+    inverseOf: YIELDS
+  YIELDS:
+    domain: Structure
+    range: Item
+    cardinality: mtm
